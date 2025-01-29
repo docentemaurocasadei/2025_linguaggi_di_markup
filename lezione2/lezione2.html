@@ -8,12 +8,116 @@
 </head>
 
 <body>
-    <h1 title="lezione 2 - titolo" >Lezione 2</h1>
+    <h1 title="lezione 2 - titolo dell'attività di base" >Lezione 2</h1>
     <a href="contatti" title="lezione 2 - link">Vai a contatti</a>
     <div id="primodiv" class="blue">elemento div 1</div>
-    <div id="secondodiv" style="color:blue">elemento div 2</div>
-    <div id="terzodiv" class="blue">elemento div 3</div>
-    
+    <div id="primodiv" class="blue" style="color:rgba(199, 65, 177, 0.506)">elemento div 1</div>
+    <div id="secondodiv" style="color:#c741b1">elemento div 2</div>
+    <h2 style="color: gold;">titolo oro</h2>
+    <div id="terzodiv" class='blue dimension2' hidden >elemento div 3</div>
+    <section>
+        <p onclick="console.log('hai cliccato il p')">questo da un messaggio se cliccato</p>
+    </section>
+    <div data-customer-code="123456">Rossi Mario</div>
+    <div data-customer-code="123457">Verdi Silvia</div>
+
+    <section>
+        <h3>Lista CLienti</h3>
+        <div>
+           <span>Carlo Bianchi</span><b>Rimini</b>
+        </div>
+        <div>
+           <span>Maria Bianchi</span><strong>Riccione</strong>
+        </div>
+        <div>
+           <span>Silvia Rossi</span><i>Misano Adriatico</i>
+        </div>
+        <div>
+            <blockquote>
+                <span>Giovanni Neri</span>&nbsp;&nbsp;<em>Cattolica</em>
+                <p>Professione:<em>Architetto&copy;</em><sup>2</sup> ...</p>
+                <p>un tag si scrive come: &lt;tag&gt;</p>
+            </blockquote>
+            un javascript si scrive:
+            &lt;script&gt;alert('ciao')&lt;/script&gt;
+        </div>
+        si scrive &lt;script&gt;alert('ciao')&lt;/script&gt;     
+        <code>premere CTRL+C</code>
+        <del>cancellato</del>
+        <ins>inserito</ins>
+        <mark>evidenziato</mark>
+        <small>piccolo</small>
+        <time datetime="2025-01-29 11:43:00">11:43:00</time>
+        <pre>
+            questo è un testo
+    che lascierà degli spazi alla prima riga
+        </pre>
+    </section>
+    <nav>
+        <ul type="circle">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Chi siamo</a>
+            </li>
+            <li>Contatti</li>
+        </ul>
+    </nav>
+    <ol>
+        <li>primo elemento</li>
+        <li>secondo elemento</li>
+        <li>terzo elemento</li>
+    </ol>
+    <dl>
+        <dt>primo termine</dt>
+        <dd>prima definizione legata al primo termine</dd>
+        <dt>secondo termine</dt>
+        <dd>seconda definizione è del 2 termine ...</dd>
+    </dl>
+    <h2>Le tabelle</h2>
+    <table border="1" style="background-color: yellow; color: chocolate;">
+        <caption>Orario di gennaio 2025</caption>
+        <thead>
+            <tr>
+                <th>Giorno</th>
+                <th>Data</th>
+                <th>Ora inizio</th>
+                <th>Ora fine</th>
+                <th>Docente</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Martedì</td>
+                <td>28 gen</td>
+                <td>9:00</td>
+                <td>13:00</td>
+                <td rowspan="2">Casadei</td>
+            </tr>
+            <tr>
+                <td>Mercoledì</td>
+                <td>29 gen</td>
+                <td>9:00</td>
+                <td>13:00</td>
+            </tr>
+            <tr>
+                <td>Giovedì</td>
+                <td>30 gen</td>
+                <td>9:00</td>
+                <td>13:00</td>
+                <td>Bianchini</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2">Tot: 12h</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 
 </html>
