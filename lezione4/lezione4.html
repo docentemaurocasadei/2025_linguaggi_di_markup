@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Form</h1>
-    <form action="http://localhost/lezione4/lezione4-grazie.php" method="get" 
+    <form action="http://localhost/lezione4/lezione4-grazie.php" method="POST" 
         enctype="multipart/form-data"
         
         id="form1"
@@ -38,12 +38,55 @@
             <br>
             <label for="colore"></label>
             <input type="color" name="colore" id="colore">
+            <br>
+            <label for="cartaid">carta id:</label>
+            <input type="file" name="cartaid" id="cartaid">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
         </fieldset>
-
+        <fieldset>
+            <legend>Tipo di utente:</legend>
+            <input type="radio" name="tipo" id="tipo1" value="1" checked>
+            <label for="tipo1">Privato</label>
+            <input type="radio" name="tipo" id="tipo2" value="2">
+            <label for="tipo2">Azienda</label>
+            <br>
+            <label for="colore-preferito">Colore Preferito</label>
+            <select name="colore-preferito" id="colore-preferito">
+                <option value="-" selected>-</option>
+                <optgroup label="colori 1">
+                    <option value="bianco">bianco</option>
+                    <option value="nero">nero</option>
+                </optgroup>
+                <optgroup label="colori 2">
+                    <option value="blue" >blue</option>
+                    <option value="verde" >verde</option>
+                    <option value="rosso">rosso</option>
+                </optgroup>
+            </select>
+            <textarea name="messaggio" id="messaggio" rows="5" cols="20"></textarea>
+        </fieldset>
+        <label for="genere-film">Seleziona il tuo genere preferito:</label>
+        <input list="genere-film">
+        <datalist id="genere-film">
+            <option>romantico</option>
+            <option>giallo</option>
+            <option>comico</option>
+        </datalist>
+        <br>
+        <details>
+            <summary>Dettagli</summary>
+            <p>Note note note</p>
+            <p>Note note note</p>
+            <input type="button" value="pulsante">
+        </details>
+        <br>
         <!-- per il pulsanti -->
         <input type="submit" value="Invia da input">
         <button type="submit">Invia da button</button>
         <button type="button" onclick="document.getElementById('form1').submit()">Pulsante da js</button>
+        <input type="reset" value="Pulisci i campi">
         <!-- <span onclick="document.getElementById('form1').submit()">test</span> -->
     </form>
 </body>
