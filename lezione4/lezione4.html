@@ -7,6 +7,16 @@
 </head>
 <body>
     <h1>Form</h1>
-    
+    <form action="lezione4-grazie.php" method="get" 
+        enctype="multipart/form-data"
+        style="border:1px solid orange"
+        id="form1">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Nome" id="nome">
+        <input type="submit" value="Invia da input">
+        <button type="submit">Invia da button</button>
+        <button type="button" onclick="document.getElementById('form1').submit()">Pulsante da js</button>
+        <!-- <span onclick="document.getElementById('form1').submit()">test</span> -->
+    </form>
 </body>
 </html>
