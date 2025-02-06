@@ -7,12 +7,40 @@
 </head>
 <body>
     <h1>Form</h1>
-    <form action="lezione4-grazie.php" method="get" 
+    <form action="http://localhost/lezione4/lezione4-grazie.php" method="get" 
         enctype="multipart/form-data"
-        style="border:1px solid orange"
-        id="form1">
+        
+        id="form1"
+        >
+        <a href="https://google.it">Google</a>
+        <!-- per il nome -->
         <label for="nome">Nome:</label>
         <input type="text" name="nome" placeholder="Nome" id="nome">
+        
+        <!-- per il cognome -->
+        <label for="cognome">Cognome:</label>
+        <input type="text" name="cognome" id="cognome" autofocus required>
+        
+        <fieldset>
+            <legend>Residenza</legend>
+            <!-- per il cap -->
+            <label for="indirizzo">Indirizzo:</label>
+            <input type="text" name="indirizzo" id="indirizzo">
+            <!-- per il cap -->
+            <label for="cap">Cap:</label>
+            <input type="text" name="cap" id="cap" pattern="[0-9]{5}">
+        </fieldset>
+        
+        <fieldset>
+            <legend>lista type input</legend>
+            <input type="checkbox" name="privacy" id="privacy" required>
+            <label for="privacy">Accetto il trattamento ...</label>
+            <br>
+            <label for="colore"></label>
+            <input type="color" name="colore" id="colore">
+        </fieldset>
+
+        <!-- per il pulsanti -->
         <input type="submit" value="Invia da input">
         <button type="submit">Invia da button</button>
         <button type="button" onclick="document.getElementById('form1').submit()">Pulsante da js</button>
