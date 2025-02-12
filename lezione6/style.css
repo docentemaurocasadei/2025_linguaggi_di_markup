@@ -1,0 +1,47 @@
+p {
+    font-size:20px;
+    color: blue;
+} 
+section {
+    background-color: rgb(60, 222, 224);
+}
+section#primo-piano {
+    background-color: rgb(247, 18, 209);
+}
+#primo-piano{
+    background-color: rgb(33, 247, 18);
+}
+a {
+    font-variant: small-caps;
+    font-weight: lighter;
+}
+a.text-bold, span, li, div.bold{
+    font-weight: 900;
+}
+.text-bold{
+    font-weight: 500;
+    text-decoration: overline;
+}
+#lezione3{
+    background-color: rgb(60, 255, 0);
+    font-weight: 900;
+}
+a {
+    text-decoration: none !important;
+}
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+/**/
+@media screen and (min-width: 768px) {
+    p {
+        color: red;
+    }
+    /**/
+}
+@media screen and (min-width: 1200px) {
+    p {
+        color: fuchsia;
+    }
+    /**/
+}
