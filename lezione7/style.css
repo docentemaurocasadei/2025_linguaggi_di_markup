@@ -1,0 +1,45 @@
+header{
+    background-color: #33A1FD;
+    min-height: 4vh;
+}
+main{
+    background-color: #B4EDD2;
+    min-height: 86vh;
+}
+footer{
+    background-color: #33A1FD;
+    min-height: 10vh;
+}
+/* nav#menu ul{
+    margin-bottom: 0;
+} */
+@media screen and (min-width: 768px) {
+    header{
+        background-color: #C0D684;
+        min-height: 6vh;
+    }
+    main{
+        background-color: #CBEAA6;
+        min-height: 74vh;
+    }
+    footer{
+        background-color: #C0D684;
+        min-height: 20vh;
+    }
+}
+@media screen and (min-width: 1200px) {
+    header{
+        background-color: #7AE582;
+        min-height: 8vh;
+    }
+    main{
+        background-color: #c0f9c4;
+        min-height: 62vh;
+
+    }
+    footer{
+        background-color: #7AE582;
+        min-height: 30vh;
+    }
+
+}
