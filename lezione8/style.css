@@ -1,59 +1,158 @@
-body > header{
+@import url('./variables.css');
+body>header {
     background-color: #33A1FD;
     min-height: 4vh;
 }
-body > main{
+
+body>main {
     background-color: #B4EDD2;
     min-height: 86vh;
 }
-body > footer{
-/* footer.pie-di-pagina{ */
+
+body>footer {
+    /* footer.pie-di-pagina{ */
     background-color: #33A1FD;
     min-height: 10vh;
 }
+.container-ifts{
+    margin: 0 auto;
+    padding: 15px 10px;
+    max-width: 90vw;
+}
 /*menu*/
-nav#menu > ul{
+nav#menu {
+    padding: 15px 0;
+}
+nav#menu>ul {
     margin-bottom: 0;
 }
-nav#menu a{
+
+nav#menu a {
     color: white;
 }
-nav#menu > ul {
+
+nav#menu>ul {
     text-align: center;
 }
-nav#menu > ul > li{
+
+nav#menu>ul>li {
     display: inline;
 }
-nav#menu > ul > li ~ li{
+
+nav#menu>ul>li~li {
     margin-left: 10px;
 }
+nav#menu>ul>li>a::after {
+    content: " » ";
+}
+nav#menu>ul>li>a:hover {
+    background-color: var(--bs-info);
+    padding: 8px 0;
+    border-radius: 5px;
+}
+/*news*/
+section#news > h2 {
+    text-align: center;
+}
+section#news > article{
+    display: inline-block;
+    border: 1px solid var(--bs-gray-dark);
+    padding: 1%;
+    max-height: 300px;
+    overflow: auto;
+}
+section#news article:nth-child(2) {
+    background-color: red;
+}
+section#news article > p::first-letter {
+    font-size: 5rem;
+}
+ a:link{
+    color: var(--bs-gray-dark);
+ }
+ a:active{
+    color: var(--bs-info);
+ }
+ a:visited{
+    color: var(--bs-yellow);
+ }
+ /*scacchiera*/
+ div#scacchiera{
+    margin: 0 auto;
+    width: 40%;
+    font-size: 0;
+ }
+ div#scacchiera > div{
+    width: 33.3%;
+    min-height: 100px;
+    display: inline-block;
+    font-size: 16px;
+ }
+ div#scacchiera > div:nth-child(odd){
+    background-color: black;
+ }
+ div#scacchiera > div:nth-child(even){
+    background-color: white;
+ }
+ /*form*/
+ input[type="checkbox"]:checked {
+    margin-left: 15px;
+ }
+ input[type="checkbox"]:checked + label {
+    background-color: rebeccapurple;
+    padding: 8px;
+    color: white;
+ }
+/*footer*/
+span[data-ifts],
+address[data-ifts] {
+    font-size: 0.8em;
+    font-style: italic;
+    color: var(--bs-success);
+}
 
+span[data-ifts="piva"] {
+    background-color: var(--colore-info);
+}
+
+/*footer*/
 @media screen and (min-width: 768px) {
-    body > header{
+    body>header {
         background-color: #C0D684;
         min-height: 6vh;
     }
-    body > main{
+
+    body>main {
         background-color: #CBEAA6;
         min-height: 74vh;
     }
-    body > footer{
+
+    body>footer {
         background-color: #C0D684;
         min-height: 20vh;
     }
+    section#news > article{
+        width: 49%;
+    }
 }
+
 @media screen and (min-width: 1200px) {
-    body > header{
+    body>header {
         background-color: #7AE582;
         min-height: 8vh;
     }
-    body > main{
+
+    body>main {
         background-color: #c0f9c4;
         min-height: 62vh;
 
     }
-    body > footer{
+
+    body>footer {
         background-color: #7AE582;
         min-height: 30vh;
+    }
+    section#news > article{
+        width: 32%;
     }
 }
