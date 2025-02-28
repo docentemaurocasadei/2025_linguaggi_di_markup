@@ -1,0 +1,144 @@
+@import url('./variables.css');
+* {
+    list-style-type: none;
+}
+/*barra dei riferimenti in alto (topbar)*/
+section#topbar {
+    background-color: var(--bs-indigo);
+    padding: 0.5rem 1rem;
+    overflow: auto;
+}
+section#topbar a {
+    color: white;
+}
+section#topbar a:nth-child(1) {
+    float: left;
+}
+section#topbar a:nth-child(2) {
+    float: right;
+}
+/*titoli h1*/
+h1{
+    text-transform: uppercase;
+    text-shadow: 5px 5px 20px black;
+}
+/*esempi posizionamento sticky*/
+nav#menu {
+    background-color: var(--bs-indigo);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+nav#menu ul  {
+    text-align: center;
+}
+nav#menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+nav#menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav#menu ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+/*esempi posizionamento relative e absolute*/
+section#posizionamenti {
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+}
+section#posizionamenti div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+}
+section#posizionamenti div:nth-child(1){
+    background-color: var(--bs-blue);
+    position: relative;
+    top: 15px;
+    left: 30px;
+    /* bottom: 45px; */
+    z-index: 1;
+    /* display: none; */
+}
+section#posizionamenti div:nth-child(2){
+    background-color: var(--bs-pink);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+section#posizionamenti div:nth-child(3){
+    background-color: var(--bs-orange);
+}
+/*section missione per background*/
+section#mission {
+    background-image: url('./pala.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 250px;
+    margin-top: 2em;
+    position: relative;
+}
+.pellicola{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+section#mission h2{
+    text-align: center;
+    color: white;
+    /* z-index: 2; */
+    position: relative;
+    cursor: pointer;
+}
+/*table css*/
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: not-allowed;
+}
+/*flexbox*/
+section#news{
+    display: flex;
+    flex-direction: column;
+}
+section#news article {
+    text-align: justify;
+}
+/*icona posizionamento fixed*/
+.bi-whatsapp {
+    color: var(--bs-green);
+    font-size: 2rem;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    /* visibility: hidden; */
+    /* display: none; */
+}
+@media screen and (min-width: 768px){
+    section#news{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    section#news article {
+        max-width: 40%;
+    }
+}
+@media screen and (min-width: 1200px){
+    section#news article {
+        max-width: 30%;
+    }
+}
