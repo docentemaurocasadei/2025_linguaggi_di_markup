@@ -1,25 +1,25 @@
 :root{
-    --spyre-red: #F12639;
+    --myboot-red: #F12639;
 }
 .btn:hover {
-    background-color: var(--spyre-red);
+    background-color: var(--myboot-red);
     color: white;
 }
 /**/
-.bg-spyre{
-    background-color: var(--spyre-red);
+.bg-myboot{
+    background-color: var(--myboot-red);
 }
 .overline{
     text-decoration: overline;
 }
-.color-spyre{
-    color: var(--spyre-red);
+.color-myboot{
+    color: var(--myboot-red);
 }
 li{
     list-style-type: none;
 }
 section#testata{
-    background-image: url('./bg-15.jpg');
+    background-image: url('./bg-mybook.jpg');
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -38,7 +38,7 @@ nav#top-menu{
     position: relative;
 }
 div#brand{
-    background-color: var(--spyre-red);
+    background-color: var(--myboot-red);
     width: 150px;
     height: 100px;
 }
