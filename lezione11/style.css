@@ -1,3 +1,18 @@
+:root{
+    --spyre-red: #F12639;
+}
+/**/
+li{
+    list-style-type: none;
+}
 section#testata{
-    background-image: url('img/testata.jpg');
+    background-image: url('./bg-15.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    color: white;
+}
+div#brand{
+    background-color: var(--spyre-red);
+    width: 150px;
+    height: 100px;
 }
